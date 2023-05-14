@@ -17,7 +17,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.developer.allianz.io/azt-grl/cwa-bce-test-automation"
+      "url": "https://github.com/gizzypk/cypress"
     },
     "keywords": [
       "test-automation"
