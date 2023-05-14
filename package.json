@@ -1,0 +1,34 @@
+{
+    "name": "cypress-test-automation",
+    "version": "1.0.0",
+    "description": "automated testing",
+    "main": "index.js",
+    "scripts": {
+      "postinstall": "cypress install",
+      "start:vpn": "cross-env-shell \"cypress open -p 4204\"",
+      "start:noVpn": "cross-env-shell \"cypress open -p 4204\"",
+      "test": "node set-env.js && cypress open -p 4204",
+      "cypress:open": "cypress open",
+      "cypress:run": "cross-env-shell \"cypress run --headed -b chrome\"",
+      "cypress:run:prod":"cypress run --env ENV=production",
+      "cypress:run:stg":"cypress run --env ENV=staging",
+      "cypress:verify": "cypress verify",
+      "format": "prettier --write cypress"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.developer.allianz.io/azt-grl/cwa-bce-test-automation"
+    },
+    "keywords": [
+      "test-automation"
+    ],
+    "author": "pornvajana kauwatnakul",
+    "license": "ISC",
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "cypress": "^12.12.0",
+      "cypress-mochawesome-reporter": "^3.2.2",
+      "prettier": "^2.7.1",
+      "typescript": "^4.8.2"
+    }
+}
