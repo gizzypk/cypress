@@ -3,12 +3,13 @@ import { defineConfig } from "cypress";
 export default defineConfig({
   requestTimeout: 15000,
   chromeWebSecurity: false,
-  reporter: "cypress-mochawesome-reporter",
+  reporter: "mochawesome",
   video: false,
   
   reporterOptions: {
     reportDir: "cypress/report",
     charts: true,
+    html: true,
     reportPageTitle: "Cypress-cwa-bce-test-automation-report",
     embeddedScreenshots: true,
   },
